@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+   spotifyd:
+    container_name: spotifyd
+    image: spotifyd:latest
+    devices:
+       - /dev/snd
