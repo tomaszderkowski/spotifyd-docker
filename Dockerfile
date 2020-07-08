@@ -13,6 +13,4 @@ RUN mkdir /spotifyd && \
 
 COPY spotifyd.conf /spotifyd/
 
-RUN chown root:root /spotifyd
-WORKDIR /spotifyd
 ENTRYPOINT ["/spotifyd/spotifyd", "--config-path", "/spotifyd/spotifyd.conf", "--no-daemon"]
